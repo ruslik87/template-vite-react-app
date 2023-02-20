@@ -1,5 +1,5 @@
 {
-  "name": "temp",
+  "name": "react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,6 +7,7 @@
     "start": "vite --open",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "deploy": "tsc && vite build && gh-pages -d dist",
     "lint": "eslint --ext .ts,.tsx ."
   },
   "dependencies": {
@@ -30,6 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^5.0.0",
     "eslint": "^8.34.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-import": "^2.27.5",
